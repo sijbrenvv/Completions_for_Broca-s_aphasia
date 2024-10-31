@@ -1,0 +1,24 @@
+transformers==4.38.1
+datasets==2.18.0
+evaluate==0.4.1
+sentence-transformers==2.5.1
+numpy~=1.24.4
+pandas==2.1.4
+nltk==3.8.1
+scikit-learn==1.3.2
+fasttext @ git+https://github.com/facebookresearch/fastText@6c2204ba66776b700095ff73e3e599a908ffd9c3
+accelerate==0.27.2
+git+https://github.com/google-research/bleurt.git
+sacrebleu==2.4.0
+spacy-udpipe==1.0.0
+spacy_stanza==1.0.4
+stanza==1.6.1
+textstat==0.7.3
+contractions==0.1.73
+joblib==1.4.0
+matplotlib==3.8.2
+spacy==3.7.4
+scipy==1.13.0
+bitsandbytes==0.43.1
+peft==0.11.1
+pattern==3.6.0
