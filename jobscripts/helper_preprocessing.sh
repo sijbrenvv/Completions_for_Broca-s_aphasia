@@ -2,7 +2,7 @@
 
 ## Setup data for pre-processing
 # Authentic aphasic
-python3 setup_ab.py -data "data/Aphasia/all_files/" -out "data/Aphasia/aphasia_broca.csv"
+python3 setup_ab.py -data "data/Aphasia/broca_files/" -out "data/Aphasia/aphasia_broca.csv"
 # healthy control data
 python3 setup_ab.py -data "data/Control/all_files/" -out "data/Control/control_broca.csv"
 # SBCSAE data
