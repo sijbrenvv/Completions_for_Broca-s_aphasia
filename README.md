@@ -34,6 +34,13 @@ The helper first executes the data setup files, converting the raw CHA files int
 
 ### Generating synthetic sentences and assessing their quality
 
+Similar to the data setup and pre-processing, we created a [helper](https://github.com/sijbrenvv/Completions_for_Broca-s_aphasia/blob/main/jobscripts/helper_data_quality.sh) for generating synthetic sentences and assessing their quality automatically.
+```bash
+jobscripts/helper_data_quality.sh
+```
+
+The helper generates synthetic sentences using the [SBCSAE corpus](https://www.linguistics.ucsb.edu/research/santa-barbara-corpus) and reproduces the data evaluation as shown in Table 3 in the paper.
+See the corresponding bash scripts for more information such as the data paths.
 
 ### Fine-tuning the models including generation and analysis
 
