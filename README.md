@@ -68,3 +68,10 @@ The bash scripts provides descriptive statistics about the completions by each m
 
 ### Generating completions for authentic Broca's aphasic sentences
 
+The generated completions for the authentic Broca's aphasic sentences can be reproduced using the [authentic completion script](https://github.com/sijbrenvv/Completions_for_Broca-s_aphasia/blob/main/jobscripts/auth_comp.sh):
+```bash
+jobscripts/auth_comp.sh
+```
+
+See the bash script and `authentic_completion.py --help` to reuse the code with different input sentences.
+Please find the generated completions for the authentic input in the [experiment folder](https://github.com/sijbrenvv/Completions_for_Broca-s_aphasia/tree/main/exp/completion/SBCSAE) as well.
