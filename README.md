@@ -56,7 +56,7 @@ Next up we fine-tune the sentence completion models, let them generate completio
 jobscripts/fine_tune.sh SBCSAE
 ```
 
-See `fine_tune_t5.py --help` for more information about its parameters, and please find the generated completions in the [experiment folder](https://github.com/sijbrenvv/Completions_for_Broca-s_aphasia/tree/main/exp/completion/SBCSAE) for convenience.
+See `python fine_tune_t5.py --help` for more information about its parameters, and please find the generated completions in the [experiment folder](https://github.com/sijbrenvv/Completions_for_Broca-s_aphasia/tree/main/exp/completion/SBCSAE) for convenience.
 
 
 To gain more insights into the ChrF and Cosine similarity scores for each model, run the following command:
@@ -73,5 +73,5 @@ The generated completions for the authentic Broca's aphasic sentences can be rep
 jobscripts/auth_comp.sh
 ```
 
-See the bash script and `authentic_completion.py --help` to reuse the code with different input sentences.
+See the bash script and `python authentic_completion.py --help` to reuse the code with different input sentences.
 Please find the generated completions for the authentic input in the [experiment folder](https://github.com/sijbrenvv/Completions_for_Broca-s_aphasia/tree/main/exp/completion/SBCSAE) as well.
