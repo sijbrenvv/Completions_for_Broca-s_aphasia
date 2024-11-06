@@ -44,6 +44,27 @@ See the corresponding bash scripts for more information such as the data paths.
 
 ### Fine-tuning the models including generation and analysis
 
+Before we can fine-tune the sentence completions models, we need to create the data splits:
+```bash
+jobscripts/finetuning_splits.sh 31-10-2024
+```
+
+The splits can be found in the [data folder](https://github.com/sijbrenvv/Completions_for_Broca-s_aphasia/tree/main/data/SBCSAE).
+
+Next up we fine-tune the sentence completion models, let them generate completions for the test set, and evaluate their performances using our [fine-tune script](https://github.com/sijbrenvv/Completions_for_Broca-s_aphasia/blob/main/jobscripts/fine_tune.sh):
+```bash
+jobscripts/fine_tune.sh SBCSAE
+```
+
+See `fine_tune_t5.py --help` for more information about its parameters, and please find the generated completions in the [experiment folder](https://github.com/sijbrenvv/Completions_for_Broca-s_aphasia/tree/main/exp/completion/SBCSAE) for convenience.
+
+
+To gain more insights into the ChrF and Cosine similarity scores for each model, run the following command:
+```bash
+jobscripts/analyse_comp.sh
+```
+
+The bash scripts provides descriptive statistics about the completions by each model, including standard error, effectively recreating Table 4 in the paper.
 
 ### Generating completions for authentic Broca's aphasic sentences
 
