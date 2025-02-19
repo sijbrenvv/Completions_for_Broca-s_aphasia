@@ -22,3 +22,4 @@ scipy==1.13.0
 bitsandbytes==0.43.1
 peft==0.11.1
 pattern==3.6.0
+rouge==1.0.1
