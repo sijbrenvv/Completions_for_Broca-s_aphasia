@@ -65,4 +65,8 @@ if __name__ == "__main__":
     print(data.ChrF.describe(), "\nStandard Error:", data.ChrF.sem())
     logger.info(data.Cos_sim_t5.describe())
     print(data.Cos_sim_t5.describe(), "\nStandard Error:", data.Cos_sim_t5.sem())
+    logger.info(data.BLEU.describe())
+    print(data.BLEU.describe(), "\nStandard Error:", data.BLEU.sem())
+    logger.info(data.RougeL.describe())
+    print(data.RougeL.describe(), "\nStandard Error:", data.RougeL.sem())
 
