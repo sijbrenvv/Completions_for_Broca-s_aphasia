@@ -1,12 +1,11 @@
 import argparse
 import pandas as pd
-import numpy as np
 from transformers import set_seed
-from datasets import Dataset
 import logging
 import warnings
 import os
 import evaluate
+from rouge import Rouge
 
 warnings.simplefilter(action='ignore', category=FutureWarning)
 warnings.simplefilter(action='ignore', category=UserWarning)
@@ -47,13 +46,13 @@ def evaluate_comp(gen_comp: list, tar_comp: list) -> dict[str:list]:
         Dictionary: The BLEU and RougeL scores for each sentence pair.
     """
     bleu = evaluate.load("bleu")
-    rouge = evaluate.load("rouge")
+    rouge = Rouge()
 
     bleu_scores = []
     rouge_scores = []
     for c, v in enumerate(gen_comp):
         bleu_scores.append(bleu.compute(predictions=[v], references=[tar_comp[c]])['bleu'])
-        rouge_scores.append(rouge.compute(predictions=[v], references=[tar_comp[c]])['rougeL'])
+        rouge_scores.append(rouge.get_scores([v], [tar_comp[c]])[0]['rouge-l']['f'])
 
     return {
         "BLEU": bleu_scores,
