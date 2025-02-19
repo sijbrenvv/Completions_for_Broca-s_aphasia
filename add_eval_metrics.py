@@ -71,6 +71,13 @@ if __name__ == "__main__":
         type=str,
     )
     parser.add_argument(
+        "--output_file_path",
+        "-out",
+        required=True,
+        help="Path where to save the output file.",
+        type=str,
+    )
+    parser.add_argument(
         "--random_seed",
         "-seed",
         help="The random seed to use. Default: 0",
