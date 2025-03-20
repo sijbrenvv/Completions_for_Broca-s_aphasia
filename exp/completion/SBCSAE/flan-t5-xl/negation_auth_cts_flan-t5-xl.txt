@@ -1,0 +1,5 @@
+Distribution of negation in the generated completions: 0.14678092726873215
+Distribution of negation in the source sentences: 0.12129202373104812
+Number of additions: 126
+Number of removals: 10
+Percentage of change: 2.988354207866403%
