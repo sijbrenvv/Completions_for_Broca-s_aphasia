@@ -1,15 +1,15 @@
-# Generating Completions for Fragmented Broca's Aphasic Sentences Using Large Language Models
+# Generating Completions for Broca's Aphasic Sentences Using Large Language Models
 
 ## Abstract
 
-Broca's aphasia is a type of aphasia characterized by non-fluent, effortful and fragmented speech production with relatively good comprehension. 
+Broca's aphasia is a type of aphasia characterized by non-fluent, effortful and agrammatic speech production with relatively good comprehension. 
 Since traditional aphasia treatment methods are often time-consuming, labour-intensive, and do not reflect real-world conversations, applying natural language processing based approaches such as Large Language Models (LLMs) could potentially contribute to improving existing treatment approaches. 
-To address this issue, we explore the use of sequence-to-sequence LLMs for completing fragmented Broca's aphasic sentences. 
+To address this issue, we explore the use of sequence-to-sequence LLMs for completing Broca's aphasic sentences. 
 We first generate synthetic Broca's aphasic data using a rule-based system designed to mirror the linguistic characteristics of Broca's aphasic speech. 
-Using this synthetic data, we then fine-tune four pre-trained LLMs on the task of completing fragmented sentences. 
+Using this synthetic data (without authentic aphasic samples), we then fine-tune four pre-trained LLMs on the task of completing agrammatic sentences. 
 We evaluate our fine-tuned models on both synthetic and authentic Broca's aphasic data. 
-We demonstrate LLMs' capability for reconstructing fragmented sentences, with the models showing improved performance with longer input utterances.
-Our result highlights the LLMs' potential in advancing communication aids for individuals with Broca's aphasia and possibly other clinical populations.
+We demonstrate LLMs' capability for reconstructing agrammatic sentences, with the models showing improved performance with longer input utterances. 
+Our result highlights the LLMs' potential in advancing communication aids for individuals with Broca's aphasia and possibly other clinical populations. 
 
 ## Replicating our experiment
 
